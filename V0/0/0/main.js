@@ -26,6 +26,7 @@ edit_button.addEventListener('click', () => {
         const doc = parser.parseFromString(html, 'text/html');
 
         const bodyContent = doc.body.innerHTML;
+        console.log(bodyContent)
 
         document.getElementById('content').innerHTML = bodyContent;
     })
