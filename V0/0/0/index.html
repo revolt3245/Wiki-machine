@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>My Wiki</title>
+        <!--Mark down library-->
+        <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+        
+        <!---MathJAX-->
+        <script>
+            window.MathJax = {
+                tex: {inlineMath: [['$', '$']],
+                    displayMath: [['$$', '$$']]
+                },
+                svg: {fontCache: 'global'}
+            }
+        </script>
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+        <!--Predefined function-->
+        <script src="predefined.js"></script>
+        <!--Style-->
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div id="title">
+            <h1>마이위키</h1>
+        </div>
+        
+        <div id="application_panel">
+            <button id="add_button">문서 작성</button>
+            <button id="option_button">설정</button>
+        </div>
+        
+        <div id="search_bar">
+            <input type="text" id="search_input" placeholder="검색"/>
+            <button id="search_button">검색</button>
+        </div>
+
+        <div id="utility_panel">
+            <button id="history_button">역사</button>
+            <button id="edit_button">수정</button>
+        </div>
+        <div id="content">Loading markdown...</div>
+        <script src="main.js"></script>
+    </body>
+</html>
